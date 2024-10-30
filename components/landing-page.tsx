@@ -19,9 +19,9 @@ export function LandingPage() {
       </header>
 
       <main className="container mx-auto px-4">
-        <section className="py-20 text-center">
-          <h2 className="text-4xl font-bold mb-4">Track Expenses Securely</h2>
-          <p className="text-xl mb-8">Without any data leaving your device</p>
+        <section className="py-20 text-center fade-in-top">
+          <h2 className="text-4xl font-bold mb-4">Effortless <span style={{color: '#E54B4B'}}>Expense</span> Tracking</h2>
+          <p className="text-xl mb-8">Log your expenses <span style={{color: "hsl(151, 50.0%, 53.2%)"}}>securely</span>. No data ever leaves your device.</p>
           <div className="relative h-[600px] mb-20">
             <Image
               src={image1}
@@ -60,9 +60,9 @@ export function LandingPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <FeatureCard icon={<CreditCard className={iconStyle} />} title="Track daily expenses" />
             <FeatureCard icon={<FolderOpen className={iconStyle} />} title="Categorize expenses" />
-            <FeatureCard icon={<FileSpreadsheet className={iconStyle} />} title="Export and import data" />
-            <FeatureCard icon={<ChartLineIcon className={iconStyle} />} title="Spend graphs" />
-            <FeatureCard icon={<DollarSign className={iconStyle} />} title="Multy currency" />
+            <FeatureCard icon={<FileSpreadsheet className={iconStyle} />} title="Export and import expenses" />
+            <FeatureCard icon={<ChartLineIcon className={iconStyle} />} title="Spend graphs and trends" />
+            <FeatureCard icon={<DollarSign className={iconStyle} />} title="Multy currency support" />
             <FeatureCard icon={<Fingerprint className={iconStyle} />} title="Face ID security" />
           </div>
         </section>
