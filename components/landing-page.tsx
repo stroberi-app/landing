@@ -68,6 +68,10 @@ export function LandingPage() {
 
       <footer className="container mx-auto px-4 py-8 text-center text-sm text-gray-500">
         <p>&copy; 2024 Stroberi App. All rights reserved.</p>
+        <div className="mt-4">
+          <a href="/privacy-policy" className="text-gray-500 hover:text-gray-300 mx-2">Privacy Policy</a>
+          <a href="/terms-and-conditions" className="text-gray-500 hover:text-gray-300 mx-2">Terms and Conditions</a>
+        </div>
       </footer>
     </div>
   )
@@ -77,6 +81,7 @@ type FeatureCardProps = {
   icon: React.ReactNode
   title: string
 }
+
 function FeatureCard({ icon, title }: FeatureCardProps) {
   return (
     <div className="bg-gray-900 p-6 rounded-lg flex items-start space-x-4">
