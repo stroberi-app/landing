@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Stroberi - Open-source Personal Expense Tracking App",
+  title: "Stroberi - Effortless Expense Tracking",
   description: "Open-source personal expense tracking app built with React Native. Manage your finances by tracking and categorizing expenses. Privacy first, data stored locally.",
   keywords: "expense tracking, personal finance, open-source, React Native, privacy, local data storage, manage expenses, categorize expenses, export data, import data, CSV format, default currency",
   authors: [{
