@@ -1,6 +1,6 @@
 'use client'
 
-import { CreditCard, FileSpreadsheet, FolderOpen, DollarSign, Fingerprint, ChartLineIcon } from "lucide-react"
+import { CreditCard, FileSpreadsheet, FolderOpen, DollarSign, ChartLineIcon } from "lucide-react"
 import logo from '../app/icon_216.png'
 import image1 from '../app/ss/image1.png'
 import image2 from '../app/ss/image2.png'
