@@ -48,16 +48,30 @@ export function LandingPage() {
         </section>
 
         <section className="py-20 text-center">
-          <div className="flex flex-col md:flex-row gap-4 items-center justify-center">
-            <Image src={iosImage} alt="download on apple" width={200} className="mb-4 md:mb-0"/>
-            <Image src={googleImage} alt="download on google" width={220}/>
+          <div className="flex flex-col md:flex-row gap-4 items-center justify-center relative">
+            <div className="relative">
+              <Image src={iosImage} alt="download on apple" width={200} className="mb-4 md:mb-0 grayscale opacity-75"/>
+              <div
+                className="absolute top-0 right-0 bg-black text-white text-xs font-bold px-2 py-1 rounded-bl-lg">Coming
+                Soon
+              </div>
+            </div>
+            <div className="relative">
+              <Image src={googleImage} alt="download on google" width={220} className="grayscale opacity-95"/>
+              <div
+                className="absolute top-0 right-0 bg-black text-white text-xs font-bold px-2 py-1 rounded-bl-lg">Coming
+                Soon
+              </div>
+            </div>
           </div>
         </section>
         <section className="py-20">
           <h2 className="text-3xl font-bold mb-12 text-center">Key Features</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
-            <FeatureCard icon={<CreditCard className={iconStyle} />} title="Track daily expenses" description="Easily log your daily expenses and keep track of your spending habits. Stroberi allows you to input your expenses quickly and efficiently, ensuring you never miss a transaction." />
-            <FeatureCard icon={<FolderOpen className={iconStyle} />} title="Categorize expenses" description="Organize your expenses by categorizing them. This feature helps you understand where your money is going and allows you to make informed financial decisions." />
+            <FeatureCard icon={<CreditCard className={iconStyle}/>} title="Track daily expenses"
+                         description="Easily log your daily expenses and keep track of your spending habits. Stroberi allows you to input your expenses quickly and efficiently, ensuring you never miss a transaction."/>
+            <FeatureCard icon={<FolderOpen className={iconStyle}/>} title="Categorize expenses"
+                         description="Organize your expenses by categorizing them. This feature helps you understand where your money is going and allows you to make informed financial decisions." />
             <FeatureCard icon={<ChartLineIcon className={iconStyle} />} title="Spend graphs and trends" description="Visualize your spending patterns with graphs and trends. This feature provides insights into your financial habits, helping you identify areas where you can save money." />
             <FeatureCard icon={<DollarSign className={iconStyle} />} title="Multi-currency support" description="Manage expenses in multiple currencies. Stroberi supports various currencies, making it ideal for travelers and those with international financial activities." />
             <FeatureCard icon={<FileSpreadsheet className={iconStyle} />} title="Export expenses" description="Export your expense data in CSV format for easy analysis and record-keeping. This feature allows you to back up your data and use it in other applications." />
