@@ -5,8 +5,8 @@ import logo from '../app/icon_216.png'
 import image1 from '../app/ss/image1-min.png'
 import image2 from '../app/ss/image2-min.png'
 import image3 from '../app/ss/image3-min.png'
-import googleImage from '../app/images/google_play.png'
-import iosImage from '../app/images/ios.svg'
+import googleImage from '../app/images/google.svg'
+import iosImage from '../app/images/apple.svg'
 import Image from "next/image"
 
 const iconStyle = "h-8 w-8 text-brand"
@@ -19,38 +19,38 @@ export function LandingPage() {
       </header>
 
       <main className="container mx-auto px-4">
-        <section className="py-20 text-center fade-in-top">
+        <section className="md:py-20 text-center fade-in-top">
           <h2 className="text-4xl font-bold mb-4">Effortless <span style={{color: '#E54B4B'}}>Expense</span> Tracking</h2>
           <p className="text-xl mb-8">Log your expenses <span style={{color: "hsl(151, 50.0%, 53.2%)"}}>securely</span>. No data ever leaves your device.</p>
-          <div className="relative mb-20 flex flex-col md:flex-row items-center justify-center">
+          <div className="relative flex flex-col md:flex-row items-center justify-center">
             <Image
               src={image2}
               alt="App Screenshot"
               width={280}
               height={550}
-              className="rounded-3xl shadow-2xl mb-4 md:mb-0 md:mr-4 opacity-75"
+              className="rounded-3xl shadow-2xl mb-4 md:mb-0 md:mr-4 opacity-75 md:order-first"
             />
             <Image
               src={image1}
               alt="App Screenshot"
               width={300}
               height={600}
-              className="rounded-3xl shadow-2xl mb-4 md:mb-0 md:mr-4"
+              className="rounded-3xl shadow-2xl mb-4 md:mb-0 md:mr-4 md:order-2 order-first"
             />
             <Image
               src={image3}
               alt="App Screenshot"
               width={280}
               height={550}
-              className="rounded-3xl shadow-2xl opacity-75"
+              className="rounded-3xl shadow-2xl opacity-75 md:order-3 order-2"
             />
           </div>
         </section>
 
-        <section className="py-20 text-center">
+        <section className="py-10 text-center">
           <div className="flex flex-col md:flex-row gap-4 items-center justify-center relative">
             <div className="relative">
-              <Image src={iosImage} alt="download on apple" width={200} className="mb-4 md:mb-0 grayscale opacity-75"/>
+              <Image src={iosImage} alt="download on apple" width={220} className="mb-4 md:mb-0 grayscale opacity-75"/>
               <div
                 className="absolute top-0 right-0 bg-black text-white text-xs font-bold px-2 py-1 rounded-bl-lg">Coming
                 Soon
@@ -69,7 +69,7 @@ export function LandingPage() {
           <h2 className="text-3xl font-bold mb-12 text-center">Key Features</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
             <FeatureCard icon={<CreditCard className={iconStyle}/>} title="Track daily expenses"
-                         description="Easily log your daily expenses and keep track of your spending habits. Stroberi allows you to input your expenses quickly and efficiently, ensuring you never miss a transaction."/>
+                         description="Easily log your daily expenses and keep track of your spending habits. Stroberi allows you to input your expenses quickly and efficiently."/>
             <FeatureCard icon={<FolderOpen className={iconStyle}/>} title="Categorize expenses"
                          description="Organize your expenses by categorizing them. This feature helps you understand where your money is going and allows you to make informed financial decisions." />
             <FeatureCard icon={<ChartLineIcon className={iconStyle} />} title="Spend graphs and trends" description="Visualize your spending patterns with graphs and trends. This feature provides insights into your financial habits, helping you identify areas where you can save money." />
