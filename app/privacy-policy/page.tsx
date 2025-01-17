@@ -1,9 +1,12 @@
 export default function PrivacyPolicy() {
-  return <div dangerouslySetInnerHTML={{
-    __html: html
-  }}/>
+  return (
+    <div
+      dangerouslySetInnerHTML={{
+        __html: html,
+      }}
+    />
+  );
 }
-
 
 const html = `
 <!DOCTYPE html>
@@ -30,4 +33,4 @@ or guardian to do so on your behalf).</p><br><strong>Security</strong><p>The Ser
     </body>
     </html>
       
-`
+`;

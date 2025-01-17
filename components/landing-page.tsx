@@ -6,6 +6,7 @@ import image1 from '../app/ss/image1-min.png'
 import image2 from '../app/ss/image2-min.png'
 import image3 from '../app/ss/image3-min.png'
 import googleImage from '../app/images/google.svg'
+import github from '../app/images/github-mark-white.png'
 import iosImage from '../app/images/apple.svg'
 import Image from "next/image"
 
@@ -13,15 +14,19 @@ const iconStyle = "h-8 w-8 text-brand"
 export function LandingPage() {
   return (
     <div className="min-h-screen bg-black text-white">
-      <header className="container mx-auto px-4 py-6 flex items-center justify-center gap-4">
+      <header className="container mx-auto px-4 py-6 flex items-center justify-center gap-4 relative">
         <h1 className="text-5xl font-bold">Stroberi</h1>
         <Image src={logo} alt="Stroberi Logo" className="h-12 w-12 rounded" />
+        <a className="hidden md:absolute right-0 md:flex" href="https://github.com/stroberi-app/stroberi">
+          <Image src={github} alt="Github logo" className="h-8 w-8"/>
+        </a>
       </header>
-
       <main className="container mx-auto px-4">
         <section className="md:py-20 text-center fade-in-top">
-          <h2 className="text-4xl font-bold mb-4">Effortless <span style={{color: '#E54B4B'}}>Expense</span> Tracking</h2>
-          <p className="text-xl mb-8">Log your expenses <span style={{color: "hsl(151, 50.0%, 53.2%)"}}>securely</span>. No data ever leaves your device.</p>
+          <h2 className="text-4xl font-bold mb-4">Effortless <span style={{ color: '#E54B4B' }}>Expense</span> Tracking
+          </h2>
+          <p className="text-xl mb-8">Log your expenses <span
+            style={{ color: "hsl(151, 50.0%, 53.2%)" }}>securely</span>. No data ever leaves your device.</p>
           <div className="relative flex flex-col md:flex-row items-center justify-center">
             <Image
               src={image2}
@@ -49,13 +54,9 @@ export function LandingPage() {
 
         <section className="py-10 text-center">
           <div className="flex flex-col md:flex-row gap-4 items-center justify-center relative">
-            <div className="relative">
-              <Image src={iosImage} alt="download on apple" width={220} className="mb-4 md:mb-0 grayscale opacity-75"/>
-              <div
-                className="absolute top-0 right-0 bg-black text-white text-xs font-bold px-2 py-1 rounded-bl-lg">Coming
-                Soon
-              </div>
-            </div>
+            <a className="" href="https://apps.apple.com/app/stroberi/id6740559308">
+              <Image src={iosImage} alt="download on apple" width={220} className="mb-4 md:mb-0"/>
+            </a>
             <div className="relative">
               <Image src={googleImage} alt="download on google" width={220} className="grayscale opacity-95"/>
               <div
@@ -65,17 +66,27 @@ export function LandingPage() {
             </div>
           </div>
         </section>
+        <a className="md:hidden flex flex-row items-center justify-center gap-4"
+           href="https://github.com/stroberi-app/stroberi">
+          <span className="font-xl font-bold">View on Github</span>
+          <Image src={github} alt="Github logo" className="h-8 w-8"/>
+        </a>
         <section className="py-20">
           <h2 className="text-3xl font-bold mb-12 text-center">Key Features</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
             <FeatureCard icon={<CreditCard className={iconStyle}/>} title="Track daily expenses"
                          description="Easily log your daily expenses and keep track of your spending habits. Stroberi allows you to input your expenses quickly and efficiently."/>
             <FeatureCard icon={<FolderOpen className={iconStyle}/>} title="Categorize expenses"
-                         description="Organize your expenses by categorizing them. This feature helps you understand where your money is going and allows you to make informed financial decisions." />
-            <FeatureCard icon={<ChartLineIcon className={iconStyle} />} title="Spend graphs and trends" description="Visualize your spending patterns with graphs and trends. This feature provides insights into your financial habits, helping you identify areas where you can save money." />
-            <FeatureCard icon={<DollarSign className={iconStyle} />} title="Multi-currency support" description="Manage expenses in multiple currencies. Stroberi supports various currencies, making it ideal for travelers and those with international financial activities." />
-            <FeatureCard icon={<FileSpreadsheet className={iconStyle} />} title="Export expenses" description="Export your expense data in CSV format for easy analysis and record-keeping. This feature allows you to back up your data and use it in other applications." />
-            <FeatureCard icon={<FileSpreadsheet className={iconStyle} />} title="Import expenses" description="Import data from other sources in CSV format. This feature makes it simple to switch to Stroberi and consolidate your financial information." />          </div>
+                         description="Organize your expenses by categorizing them. This feature helps you understand where your money is going and allows you to make informed financial decisions."/>
+            <FeatureCard icon={<ChartLineIcon className={iconStyle}/>} title="Spend graphs and trends"
+                         description="Visualize your spending patterns with graphs and trends. This feature provides insights into your financial habits, helping you identify areas where you can save money."/>
+            <FeatureCard icon={<DollarSign className={iconStyle}/>} title="Multi-currency support"
+                         description="Manage expenses in multiple currencies. Stroberi supports various currencies, making it ideal for travelers and those with international financial activities."/>
+            <FeatureCard icon={<FileSpreadsheet className={iconStyle}/>} title="Export expenses"
+                         description="Export your expense data in CSV format for easy analysis and record-keeping. This feature allows you to back up your data and use it in other applications."/>
+            <FeatureCard icon={<FileSpreadsheet className={iconStyle}/>} title="Import expenses"
+                         description="Import data from other sources in CSV format. This feature makes it simple to switch to Stroberi and consolidate your financial information."/>
+          </div>
         </section>
       </main>
 

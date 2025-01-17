@@ -14,7 +14,7 @@ body {
 
 @layer base {
   :root {
-    --brand: #E54B4B;
+    --brand: #e54b4b;
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;
@@ -42,7 +42,7 @@ body {
     --radius: 0.5rem;
   }
   .dark {
-    --brand: #E54B4B;
+    --brand: #e54b4b;
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
     --card: 0 0% 3.9%;
@@ -78,7 +78,6 @@ body {
     @apply bg-background text-foreground;
   }
 }
-
 
 @keyframes fadeInTop {
   from {
