@@ -57,13 +57,9 @@ export function LandingPage() {
             <a className="" href="https://apps.apple.com/app/stroberi/id6740559308">
               <Image src={iosImage} alt="download on apple" width={220} className="mb-4 md:mb-0"/>
             </a>
-            <div className="relative">
-              <Image src={googleImage} alt="download on google" width={220} className="grayscale opacity-95"/>
-              <div
-                className="absolute top-0 right-0 bg-black text-white text-xs font-bold px-2 py-1 rounded-bl-lg">Coming
-                Soon
-              </div>
-            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.stroberi">
+              <Image src={googleImage} alt="download on google" width={220} />
+            </a>
           </div>
         </section>
         <a className="md:hidden flex flex-row items-center justify-center gap-4"
