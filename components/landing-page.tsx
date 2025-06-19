@@ -97,13 +97,13 @@ export function LandingPage() {
                 href="https://apps.apple.com/app/stroberi/id6740559308"
                 className="group hover-lift transition-all duration-300"
               >
-                <Image src={iosImage} alt="Download on App Store" width={200} className="transition-transform group-hover:scale-105" />
+                <Image src={iosImage} alt="Download on App Store" width={200} className="transition-transform group-hover:scale-102" />
               </a>
               <a 
                 href="https://play.google.com/store/apps/details?id=com.stroberi"
                 className="group hover-lift transition-all duration-300"
               >
-                <Image src={googleImage} alt="Get it on Google Play" width={200} className="transition-transform group-hover:scale-105" />
+                <Image src={googleImage} alt="Get it on Google Play" width={200} className="transition-transform group-hover:scale-102" />
               </a>
             </div>
 
@@ -115,7 +115,7 @@ export function LandingPage() {
                   alt="Expense List View"
                   width={250}
                   height={500}
-                  className="rounded-3xl shadow-2xl opacity-80 md:transform md:-rotate-6"
+                  className="rounded-3xl shadow-2xl opacity-90 md:transform md:-rotate-3"
                 />
               </div>
               <div className="relative hover-lift glow-effect">
@@ -133,7 +133,7 @@ export function LandingPage() {
                   alt="Statistics View"
                   width={250}
                   height={500}
-                  className="rounded-3xl shadow-2xl opacity-80 md:transform md:rotate-6"
+                  className="rounded-3xl shadow-2xl opacity-90 md:transform md:rotate-3"
                 />
               </div>
             </div>
@@ -306,13 +306,13 @@ export function LandingPage() {
                    href="https://apps.apple.com/app/stroberi/id6740559308"
                    className="group hover-lift transition-all duration-300"
                  >
-                   <Image src={iosImage} alt="Download on App Store" width={180} className="transition-transform group-hover:scale-105" />
+                   <Image src={iosImage} alt="Download on App Store" width={180} className="transition-transform group-hover:scale-102" />
                  </a>
                  <a 
                    href="https://play.google.com/store/apps/details?id=com.stroberi"
                    className="group hover-lift transition-all duration-300"
                  >
-                   <Image src={googleImage} alt="Get it on Google Play" width={180} className="transition-transform group-hover:scale-105" />
+                   <Image src={googleImage} alt="Get it on Google Play" width={180} className="transition-transform group-hover:scale-102" />
                  </a>
                </div>
             </div>
