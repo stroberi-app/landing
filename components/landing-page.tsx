@@ -1,13 +1,12 @@
 'use client'
 
 import { useState, useEffect } from "react"
-import { CreditCard, FileSpreadsheet, FolderOpen, DollarSign, ChartLineIcon, Shield, Smartphone, Download, Star, Check, ChevronDown, Github, Mail, Users, Zap, Lock } from "lucide-react"
+import { CreditCard, FileSpreadsheet, FolderOpen, DollarSign, ChartLineIcon, Shield, ChevronDown, Github, Mail, Zap, Lock } from "lucide-react"
 import logo from '../app/icon_216.png'
 import image1 from '../app/ss/image1-min.png'
 import image2 from '../app/ss/image2-min.png'
 import image3 from '../app/ss/image3-min.png'
 import googleImage from '../app/images/google.svg'
-import github from '../app/images/github-mark-white.png'
 import iosImage from '../app/images/apple.svg'
 import Image from "next/image"
 
@@ -148,7 +147,7 @@ export function LandingPage() {
                 Why Choose <span className="gradient-brand">Stroberi</span>?
               </h2>
               <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-                We built Stroberi with privacy and simplicity at its core. Here's what makes us different.
+                We built Stroberi with privacy and simplicity at its core. Here&apos;s what makes us different.
               </p>
             </div>
 
@@ -298,7 +297,7 @@ export function LandingPage() {
                 Ready to Take Control?
               </h2>
               <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                Join thousands who've switched to private, secure expense tracking. 
+                                 Join thousands who&apos;ve switched to private, secure expense tracking. 
                 Download Stroberi today and experience the difference.
               </p>
                              <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
@@ -403,28 +402,7 @@ function BenefitCard({ icon, title, description, delay = "" }: FeatureCardProps)
   )
 }
 
-type TestimonialCardProps = {
-  text: string
-  author: string
-  role: string
-}
 
-function TestimonialCard({ text, author, role }: TestimonialCardProps) {
-  return (
-    <div className="glass-effect p-6 rounded-2xl hover-lift">
-      <div className="flex gap-1 mb-4">
-        {[...Array(5)].map((_, i) => (
-          <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-        ))}
-      </div>
-      <p className="text-gray-300 mb-4 italic">"{text}"</p>
-      <div>
-        <p className="font-semibold">{author}</p>
-        <p className="text-sm text-gray-400">{role}</p>
-      </div>
-    </div>
-  )
-}
 
 type FAQItemProps = {
   question: string
