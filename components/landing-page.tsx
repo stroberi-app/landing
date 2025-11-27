@@ -64,7 +64,7 @@ export function LandingPage() {
           </div>
           <div className="hidden md:flex items-center gap-6">
             <a href="#features" className="text-gray-300 hover:text-white transition-colors">Features</a>
-            {/* <a href="#benefits" className="text-gray-300 hover:text-white transition-colors">Benefits</a> */}
+            <a href="/tools" className="text-gray-300 hover:text-white transition-colors">Tools</a>
             <a href="#faq" className="text-gray-300 hover:text-white transition-colors">FAQ</a>
             <a href="https://github.com/stroberi-app/stroberi" className="flex items-center gap-2 glass-effect px-4 py-2 rounded-lg hover-glow transition-all">
               <Github className="h-4 w-4" />
@@ -345,7 +345,7 @@ export function LandingPage() {
               <h4 className="font-semibold mb-4 text-white">Product</h4>
               <ul className="space-y-2 text-gray-300">
                 <li><a href="#features" className="hover:text-white transition-colors">Features</a></li>
-                {/* <li><a href="#benefits" className="hover:text-white transition-colors">Benefits</a></li> */}
+                <li><a href="/tools" className="hover:text-white transition-colors">Tools</a></li>
                 <li><a href="#faq" className="hover:text-white transition-colors">FAQ</a></li>
                 <li><a href="https://github.com/stroberi-app/stroberi" className="hover:text-white transition-colors">Open Source</a></li>
               </ul>
