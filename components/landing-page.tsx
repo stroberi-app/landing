@@ -4,8 +4,9 @@ import { useState } from "react"
 import { ChevronDown, Github, Mail, Shield, Zap, Lock, TrendingUp, FileText, Smartphone, ArrowRight, PiggyBank, Bell, BarChart3 } from "lucide-react"
 import logo from '../app/icon_216.png'
 import image1 from '../app/ss/image1-min.png'
-import image2 from '../app/ss/image2-min.png'
-import image3 from '../app/ss/image3-min.png'
+import budgetAlertImage from '../app/ss/budget-alert-on-home.png'
+import createFlowImage from '../app/ss/create-flow.png'
+import homeScreenImage from '../app/ss/home-screenshot.png'
 import googleImage from '../app/images/google.svg'
 import iosImage from '../app/images/apple.svg'
 import Image from "next/image"
@@ -140,18 +141,14 @@ export function LandingPage() {
                   <div className="absolute -inset-20 bg-gradient-to-b from-[#e54b4b]/20 via-transparent to-transparent rounded-full blur-3xl" />
                   
                   <div className="relative animate-float-slow">
-                    <div className="phone-mockup w-[280px] sm:w-[320px]">
-                      <div className="phone-screen">
-                        <Image
-                          src={image1}
-                          alt="Stroberi App"
-                          width={320}
-                          height={640}
-                          className="w-full"
-                          priority
-                        />
-                      </div>
-                    </div>
+                    <Image
+                      src={image1}
+                      alt="Stroberi App"
+                      width={320}
+                      height={640}
+                      className="w-[280px] sm:w-[320px] rounded-[3rem]"
+                      priority
+                    />
                   </div>
                   
                   <div className="absolute -left-16 top-1/4 animate-float-medium delay-200">
@@ -225,51 +222,20 @@ export function LandingPage() {
                 </div>
               </div>
               
-              <div className="relative">
+              <div className="relative flex justify-center">
                 <div className="absolute -inset-10 bg-gradient-to-br from-emerald-500/10 via-transparent to-transparent rounded-full blur-3xl" />
                 
-                <div className="relative glass-strong rounded-3xl p-8 space-y-6">
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <p className="text-sm text-neutral-400">Monthly Budget</p>
-                      <p className="text-2xl font-bold">Food & Dining</p>
+                <div className="relative">
+                  <div className="phone-mockup w-[280px]">
+                    <div className="phone-screen">
+                      <Image
+                        src={budgetAlertImage}
+                        alt="Budget Alert on Home Screen"
+                        width={280}
+                        height={560}
+                        className="w-full"
+                      />
                     </div>
-                    <span className="text-3xl">🍔</span>
-                  </div>
-                  
-                  <div className="space-y-2">
-                    <div className="flex justify-between text-sm">
-                      <span className="text-neutral-400">$340 of $500</span>
-                      <span className="text-amber-400 font-medium">68%</span>
-                    </div>
-                    <div className="h-3 bg-white/10 rounded-full overflow-hidden">
-                      <div className="h-full w-[68%] bg-gradient-to-r from-emerald-500 to-amber-400 rounded-full" />
-                    </div>
-                  </div>
-                  
-                  <div className="pt-4 border-t border-white/10">
-                    <div className="flex items-center gap-3 text-sm">
-                      <div className="w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center">
-                        <Bell className="h-4 w-4 text-amber-400" />
-                      </div>
-                      <p className="text-neutral-300">
-                        Alert set at <span className="text-amber-400 font-medium">80%</span> — $60 remaining
-                      </p>
-                    </div>
-                  </div>
-                  
-                  <div className="grid grid-cols-3 gap-4 pt-4">
-                    {[
-                      { label: "This week", amount: "$89", trend: "↓ 12%" },
-                      { label: "Last week", amount: "$102", trend: "" },
-                      { label: "Avg/week", amount: "$95", trend: "" }
-                    ].map((stat, i) => (
-                      <div key={i} className="text-center p-3 rounded-xl bg-white/5">
-                        <p className="text-xs text-neutral-500 mb-1">{stat.label}</p>
-                        <p className="font-bold">{stat.amount}</p>
-                        {stat.trend && <p className="text-xs text-emerald-400">{stat.trend}</p>}
-                      </div>
-                    ))}
                   </div>
                 </div>
               </div>
@@ -369,15 +335,14 @@ export function LandingPage() {
                   <p className="text-neutral-400 mb-8 leading-relaxed">
                     Add transactions in seconds. Amount is all you need — category, date, and notes are optional for when you want more detail.
                   </p>
-                  <div className="mt-auto grid grid-cols-2 gap-4">
-                    <div className="p-4 rounded-xl bg-white/5 text-center">
-                      <span className="text-3xl mb-2 block">⚡</span>
-                      <p className="text-sm text-neutral-400">Under 5 seconds</p>
-                    </div>
-                    <div className="p-4 rounded-xl bg-white/5 text-center">
-                      <span className="text-3xl mb-2 block">📱</span>
-                      <p className="text-sm text-neutral-400">Works offline</p>
-                    </div>
+                  <div className="mt-auto rounded-2xl overflow-hidden border border-white/10">
+                    <Image 
+                      src={createFlowImage} 
+                      alt="Quick Entry Flow"
+                      width={500}
+                      height={300}
+                      className="w-full object-cover"
+                    />
                   </div>
                 </div>
               </div>
@@ -416,26 +381,19 @@ export function LandingPage() {
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="order-2 lg:order-1">
                 <div className="relative flex justify-center">
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent z-10" />
+                  <div className="absolute -inset-10 bg-gradient-to-br from-[#e54b4b]/10 via-transparent to-transparent rounded-full blur-3xl" />
                   
-                  <div className="flex gap-4">
-                    <div className="relative -mt-8">
-                      <Image
-                        src={image2}
-                        alt="Transaction List"
-                        width={220}
-                        height={440}
-                        className="rounded-3xl shadow-2xl"
-                      />
-                    </div>
-                    <div className="relative mt-8">
-                      <Image
-                        src={image3}
-                        alt="Categories"
-                        width={220}
-                        height={440}
-                        className="rounded-3xl shadow-2xl"
-                      />
+                  <div className="relative">
+                    <div className="phone-mockup w-[280px]">
+                      <div className="phone-screen">
+                        <Image
+                          src={homeScreenImage}
+                          alt="Home Screen Overview"
+                          width={280}
+                          height={560}
+                          className="w-full"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
