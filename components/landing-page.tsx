@@ -1,11 +1,10 @@
 'use client'
 
 import { useState } from "react"
-import { ChevronDown, Github, Mail, Shield, Zap, Lock, TrendingUp, FileText, Smartphone, ArrowRight, PiggyBank, Bell, BarChart3 } from "lucide-react"
+import { ChevronDown, Github, Mail, Shield, Zap, Lock, TrendingUp, ArrowRight, PiggyBank, Bell, BarChart3 } from "lucide-react"
 import logo from '../app/icon_216.png'
 import image1 from '../app/ss/image1-min.png'
 import budgetAlertImage from '../app/ss/budget-alert-on-home.png'
-import createFlowImage from '../app/ss/create-flow.png'
 import homeScreenImage from '../app/ss/home-screenshot.png'
 import googleImage from '../app/images/google.svg'
 import iosImage from '../app/images/apple.svg'
