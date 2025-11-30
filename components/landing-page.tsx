@@ -61,7 +61,6 @@ export function LandingPage() {
           </a>
           
           <div className="hidden md:flex items-center gap-8">
-            <a href="#features" className="nav-link text-sm font-medium">Features</a>
             <a href="/tools" className="nav-link text-sm font-medium">Tools</a>
             <a href="#faq" className="nav-link text-sm font-medium">FAQ</a>
             <a 
@@ -287,96 +286,7 @@ export function LandingPage() {
           </div>
         </section>
 
-        <section id="features" className="py-24 relative">
-          <div className="absolute inset-0 dot-pattern opacity-30" />
-          
-          <div className="container mx-auto px-6 max-w-7xl relative">
-            <div className="text-center mb-20">
-              <span className="brand-badge mb-4">Features</span>
-              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mt-6 mb-6">
-                Everything you need.
-                <br />
-                <span className="text-neutral-500">Nothing you don&apos;t.</span>
-              </h2>
-              <p className="text-lg text-neutral-400 max-w-2xl mx-auto">
-                Powerful expense tracking without the bloat. Designed to do one thing exceptionally well.
-              </p>
-            </div>
-
-            <div className="grid lg:grid-cols-2 gap-8 mb-8">
-              <div className="bento-card p-8 lg:p-10">
-                <div className="flex flex-col h-full">
-                  <div className="w-14 h-14 rounded-2xl bg-[#e54b4b]/10 flex items-center justify-center mb-6">
-                    <TrendingUp className="h-7 w-7 text-[#e54b4b]" />
-                  </div>
-                  <h3 className="text-2xl lg:text-3xl font-bold mb-4">Visual Analytics</h3>
-                  <p className="text-neutral-400 mb-8 leading-relaxed">
-                    Beautiful charts reveal where your money actually goes. Track spending by category, 
-                    see monthly trends, and identify patterns you never noticed.
-                  </p>
-                  <div className="mt-auto rounded-2xl overflow-hidden border border-white/10">
-                    <Image 
-                      src={image1} 
-                      alt="Analytics Dashboard"
-                      width={500}
-                      height={300}
-                      className="w-full object-cover"
-                    />
-                  </div>
-                </div>
-              </div>
-              
-              <div className="bento-card p-8 lg:p-10">
-                <div className="flex flex-col h-full">
-                  <div className="w-14 h-14 rounded-2xl bg-emerald-500/10 flex items-center justify-center mb-6">
-                    <Smartphone className="h-7 w-7 text-emerald-400" />
-                  </div>
-                  <h3 className="text-2xl lg:text-3xl font-bold mb-4">Quick Entry</h3>
-                  <p className="text-neutral-400 mb-8 leading-relaxed">
-                    Add transactions in seconds. Amount is all you need — category, date, and notes are optional for when you want more detail.
-                  </p>
-                  <div className="mt-auto rounded-2xl overflow-hidden border border-white/10">
-                    <Image 
-                      src={createFlowImage} 
-                      alt="Quick Entry Flow"
-                      width={500}
-                      height={300}
-                      className="w-full object-cover"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div className="grid md:grid-cols-3 gap-8">
-              {[
-                {
-                  icon: <span className="text-2xl">🏷️</span>,
-                  title: "Smart Categories",
-                  description: "14 pre-built categories with emoji icons. Create unlimited custom ones to match your life."
-                },
-                {
-                  icon: <span className="text-2xl">🔄</span>,
-                  title: "Recurring Transactions",
-                  description: "Set up subscriptions and regular expenses once. They're automatically logged on schedule."
-                },
-                {
-                  icon: <FileText className="h-6 w-6 text-cyan-400" />,
-                  title: "Export & Import",
-                  description: "Your data is never locked in. Export to CSV/JSON anytime. Import from anywhere."
-                }
-              ].map((item, i) => (
-                <div key={i} className="feature-card">
-                  <div className="mb-4">{item.icon}</div>
-                  <h3 className="text-lg font-bold mb-2">{item.title}</h3>
-                  <p className="text-neutral-400 text-sm leading-relaxed">{item.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="py-24 relative">
+<section className="py-24 relative">
           <div className="container mx-auto px-6 max-w-7xl">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="order-2 lg:order-1">
@@ -545,7 +455,6 @@ export function LandingPage() {
             <div>
               <h4 className="font-semibold mb-4 text-sm">Product</h4>
               <ul className="space-y-3 text-sm text-neutral-500">
-                <li><a href="#features" className="hover:text-white transition-colors">Features</a></li>
                 <li><a href="/tools" className="hover:text-white transition-colors">Tools</a></li>
                 <li><a href="#faq" className="hover:text-white transition-colors">FAQ</a></li>
               </ul>
